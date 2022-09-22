@@ -6,12 +6,12 @@
   "tasks": {
     "getting jdk": {
       "name": "wget https://github.com/hmsjy2017/get-jdk/releases/download/v8u231/jdk-8u231-linux-x64.tar.gz",
-      "command": "wget https://github.com/hmsjy2017/get-jdk/releases/download/v8u231/jdk-8u231-linux-x64.tar.gz && "
+      "command": "wget https://github.com/hmsjy2017/get-jdk/releases/download/v8u231/jdk-8u231-linux-x64.tar.gz",
+      "runAtStart": true
     },
     "unzipping jdk": {
       "name": "tar extract",
-      "command": "tar -xvzf jdk-8u231-linux-x64.tar.gz",
-      "runAtStart": true
+      "command": "tar -xvzf jdk-8u231-linux-x64.tar.gz"
     },
     "setting java home": {
       "name": "jav home",
