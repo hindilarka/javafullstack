@@ -7,14 +7,28 @@
       "runAtStart": true
     },
     {
-      "name": "tar extract",
+      "name": "get maven",
+      "command": "wget https://dlcdn.apache.org/maven/maven-3/3.8.6/binaries/apache-maven-3.8.6-bin.tar.gz",
+      "runAtStart": true
+    },
+    {
+      "name": "tar extract java",
       "command": "tar -xvzf jdk-8u231-linux-x64.tar.gz",
+      "runAtStart": true
+    },
+    {
+      "name": "tar extract maven",
+      "command": "tar -xvzf apache-maven-3.8.6-bin.tar.gz",
       "runAtStart": true
     },
     {
       "name": "jav home",
       "command": "export PATH=/project/javafullstack/jdk1.8.0_231/bin:$PATH",
       "runAtStart": true
+    },
+    {
+      "name": "maven home",
+      "command": "export PATH=/project/javafullstack/apache-maven-3.8.6/bin:$PATH"
     }
   ],
 
