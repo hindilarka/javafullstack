@@ -8,11 +8,13 @@
     },
     {
       "name": "tar extract",
-      "command": "tar -xvzf jdk-8u231-linux-x64.tar.gz"
+      "command": "tar -xvzf jdk-8u231-linux-x64.tar.gz",
+      "runAtStart": true
     },
     {
       "name": "jav home",
-      "command": "export PATH=/project/javafullstack/jdk1.8.0_231/bin:$PATH"
+      "command": "export PATH=/project/javafullstack/jdk1.8.0_231/bin:$PATH",
+      "runAtStart": true
     }
   ],
 
