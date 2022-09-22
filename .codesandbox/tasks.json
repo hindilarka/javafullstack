@@ -32,7 +32,8 @@
   "tasks": {
     "adding to jav path": {
       "name": "jav home",
-      "command": "export PATH=/project/javafullstack/jdk1.8.0_231/bin:$PATH"
+      "command": "export PATH=/project/javafullstack/jdk1.8.0_231/bin:$PATH",
+      "runAtStart": true
     },
     "adding to maven path": {
       "name": "maven home",
