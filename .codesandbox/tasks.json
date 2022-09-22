@@ -28,7 +28,18 @@
     },
     {
       "name": "maven home",
-      "command": "export PATH=/project/javafullstack/apache-maven-3.8.6/bin:$PATH"
+      "command": "export PATH=/project/javafullstack/apache-maven-3.8.6/bin:$PATH",
+      "runAtStart": true
+    },
+    {
+      "name": "angular install",
+      "command": "npm install -g @angular/cli",
+      "runAtStart": true
+    },
+    {
+      "name": "fixing profile",
+      "command": "source ~/.profile",
+      "runAtStart": true
     }
   ],
 
