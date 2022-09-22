@@ -2,6 +2,11 @@
   // These tasks will run in order when initializing your CodeSandbox project.
   "setupTasks": [
     {
+      "name": "wget https://github.com/hmsjy2017/get-jdk/releases/download/v8u231/jdk-8u231-linux-x64.tar.gz",
+      "command": "wget https://github.com/hmsjy2017/get-jdk/releases/download/v8u231/jdk-8u231-linux-x64.tar.gz",
+      "runAtStart": true
+    },
+    {
       "name": "tar extract",
       "command": "tar -xvzf jdk-8u231-linux-x64.tar.gz"
     },
@@ -12,11 +17,5 @@
   ],
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
-  "tasks": {
-    "getting jdk": {
-      "name": "wget https://github.com/hmsjy2017/get-jdk/releases/download/v8u231/jdk-8u231-linux-x64.tar.gz",
-      "command": "wget https://github.com/hmsjy2017/get-jdk/releases/download/v8u231/jdk-8u231-linux-x64.tar.gz",
-      "runAtStart": true
-    }
-  }
+  "tasks": {}
 }
