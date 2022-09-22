@@ -1,0 +1,21 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "getting jdk": {
+      "name": "wget https://github.com/hmsjy2017/get-jdk/releases/download/v8u231/jdk-8u231-linux-x64.tar.gz",
+      "command": "wget https://github.com/hmsjy2017/get-jdk/releases/download/v8u231/jdk-8u231-linux-x64.tar.gz && "
+    },
+    "unzipping jdk": {
+      "name": "tar extract",
+      "command": "tar -xvzf jdk-8u231-linux-x64.tar.gz",
+      "runAtStart": true
+    },
+    "setting java home": {
+      "name": "jav home",
+      "command": "export PATH=/project/javafullstack/jdk1.8.0_231/bin:$PATH"
+    }
+  }
+}
