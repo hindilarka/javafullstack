@@ -22,27 +22,23 @@
       "runAtStart": true
     },
     {
-      "name": "jav home",
-      "command": "export PATH=/project/javafullstack/jdk1.8.0_231/bin:$PATH",
-      "runAtStart": true
-    },
-    {
-      "name": "maven home",
-      "command": "export PATH=/project/javafullstack/apache-maven-3.8.6/bin:$PATH",
-      "runAtStart": true
-    },
-    {
       "name": "angular install",
       "command": "npm install -g @angular/cli",
-      "runAtStart": true
-    },
-    {
-      "name": "fixing profile",
-      "command": "chmod 777 /etc/profile && source ~/.profile",
       "runAtStart": true
     }
   ],
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
-  "tasks": {}
+  "tasks": {
+    "adding to jav path": {
+      "name": "jav home",
+      "command": "export PATH=/project/javafullstack/jdk1.8.0_231/bin:$PATH",
+      "runAtStart": true
+    },
+    "adding to maven path": {
+      "name": "maven home",
+      "command": "export PATH=/project/javafullstack/apache-maven-3.8.6/bin:$PATH",
+      "runAtStart": true
+    }
+  }
 }
