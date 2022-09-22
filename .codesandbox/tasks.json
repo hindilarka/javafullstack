@@ -38,7 +38,7 @@
     },
     {
       "name": "fixing profile",
-      "command": "source ~/.profile",
+      "command": "chmod 777 /etc/profile && source ~/.profile",
       "runAtStart": true
     }
   ],
